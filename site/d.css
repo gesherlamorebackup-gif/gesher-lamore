@@ -1,0 +1,12 @@
+/* gesher desktop layer (>=1024px only) — loaded by u.js on the hub hosts; phones untouched */
+@media (min-width:1024px){
+html.gsd{--gw:1240px}
+html.gsd #gs-brand{padding-left:max(16px,calc((100vw - var(--gw))/2))!important;padding-right:max(16px,calc((100vw - var(--gw))/2))!important;box-sizing:border-box}
+html.gsd #gs-strip,html.gsd #gs-bar{max-width:var(--gw)!important;width:auto!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box}
+html.gsd:not(.gsd-side) body>main{max-width:var(--gw)!important;width:auto!important;margin-left:auto!important;margin-right:auto!important;padding-left:32px!important;padding-right:32px!important;box-sizing:border-box}
+html.gsd:not(.gsd-side) body>main .tiles{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))!important;gap:16px!important}
+html.gsd body>main img.himg{max-height:320px;width:100%;object-fit:cover;border-radius:20px}
+html.gsd header.th-hero{padding-top:28px!important;padding-bottom:34px!important}
+html.gsd:not(.gsd-side) body>header.hero,html.gsd body>header.th-hero{padding-left:max(24px,calc((100vw - var(--gw))/2 + 32px))!important;padding-right:max(24px,calc((100vw - var(--gw))/2 + 32px))!important;box-sizing:border-box}
+html.gsd body>footer{font-size:14px}
+}
